@@ -439,3 +439,21 @@ ul{margin:0;padding:0;list-style:none}
 .integrity-note{text-align:center;color:var(--muted);font-size:.88rem;max-width:70ch;margin:26px auto 0;background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);padding:16px 22px}
 .integrity-note strong{color:#8a6d08}
 @media(max-width:620px){.workflow-table>div{grid-template-columns:auto 1fr}.workflow-table span{justify-self:start;grid-column:2}}
+/* ============================================================
+   STICKY NAVIGATION — SHANTI KATUA PORTFOLIO
+   Announcement scrolls away; navigation stays visible.
+   ============================================================ */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #e2eaf2;
+}
